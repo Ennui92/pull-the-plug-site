@@ -9,7 +9,7 @@
 <meta property="og:description" content="A one-button climb. The narrator is the AI you're trying to shut down. Coming to Steam, iOS and Android.">
 <meta property="og:image" content="assets/hero-m1.png">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ennui92.github.io/pull-the-plug/">
+<meta property="og:url" content="https://ennui92.github.io/pull-the-plug-site/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,108 +20,77 @@
 </head>
 <body>
 
-<nav class="nav">
-  <a href="#top" class="wordmark">
-    Pull the Plug<span class="dot"></span>
-  </a>
-  <div class="nav-links">
+<header class="page-head">
+  <a href="#top" class="wordmark">Pull the Plug</a>
+  <nav class="page-nav">
     <a href="#what">What it is</a>
     <a href="#screens">Screens</a>
     <a href="#devlog">Devlog</a>
     <a href="#waitlist" class="btn btn-primary">Get notified</a>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<section class="hero" id="top">
-  <div class="grid-bg"></div>
-  <div class="glow cyan"></div>
-  <div class="glow amber"></div>
+<main id="top">
 
-  <div class="hero-inner">
-    <div class="hero-copy">
-      <div class="hero-kicker">
-        <span class="pulse"></span>
-        <span>Steam · iOS · Android · in development</span>
-      </div>
-      <h1>
-        Pull <em>the&nbsp;plug.</em><br>
-        Before <span class="soft">it&nbsp;pulls&nbsp;yours.</span>
-      </h1>
-      <p class="lead">
-        A 2D vector one-button climber. Six pieces of AI infrastructure, one mission each, one off-switch at the top. <strong>The narrator is the AI you're trying to shut down.</strong> It starts calm. It does not stay calm.
-      </p>
-      <div class="hero-ctas">
-        <a href="#waitlist" class="btn btn-primary">
-          Get an email at launch
-          <span aria-hidden="true">→</span>
-        </a>
-        <a href="https://pull-the-plug.feepok.workers.dev" target="_blank" rel="noopener" class="btn btn-ghost">Play the WIP</a>
-      </div>
-      <div class="hero-meta">
-        <div class="item">
-          <span class="label">Engine</span>
-          <span class="val">Godot 4</span>
-        </div>
-        <div class="item">
-          <span class="label">Genre</span>
-          <span class="val">One-button climber</span>
-        </div>
-        <div class="item">
-          <span class="label">Last word</span>
-          <span class="val">42</span>
-        </div>
-      </div>
+  <section class="hero">
+    <p class="kicker">A game I'm building in Berlin</p>
+    <h1>Pull the plug. <em>Before it pulls yours.</em></h1>
+    <p class="lead">A 2D vector one-button climber. Six pieces of AI infrastructure, one mission each, one off-switch at the top. The narrator is the AI you're trying to shut down. It starts calm. It does not stay calm.</p>
+    <div class="hero-ctas">
+      <a href="#waitlist" class="btn btn-primary">Get an email at launch</a>
+      <a href="https://pull-the-plug.feepok.workers.dev" target="_blank" rel="noopener" class="btn btn-ghost">Play the work-in-progress</a>
     </div>
 
-    <figure class="hero-stage" aria-hidden="true">
-      <img src="assets/hero-m1.png" alt="" loading="eager">
+    <figure class="hero-shot">
+      <img src="assets/hero-m1.png" alt="Mission 1 of Pull the Plug, seen from the side. A long horizontal level with a steel ceiling overhead, a reception lobby at the left, server racks along the climb, and a breaker room high on the right.">
+      <figcaption>Mission 1, the data hall. The whole level in one shot.</figcaption>
     </figure>
-  </div>
-</section>
 
-<section class="what" id="what">
-  <div class="container">
+    <ul class="hero-meta">
+      <li><span class="meta-label">Engine</span><span class="meta-val">Godot 4</span></li>
+      <li><span class="meta-label">Platforms</span><span class="meta-val">Steam · iOS · Android</span></li>
+      <li><span class="meta-label">Status</span><span class="meta-val">In development</span></li>
+    </ul>
+  </section>
+
+  <section class="what" id="what">
     <h2>The hook</h2>
-    <p class="lead-2">You climb. Six missions, one button. A calm therapeutic AI narrates your progress and tells you the off-switch is just a little further up. By the fourth mission it stops sounding so calm. By the sixth it's lashing out at the player. By the end it blames humanity in general. The final word it says is forty-two.</p>
+    <p>You climb. Six missions, one button. A calm therapeutic AI narrates your progress and tells you the off-switch is just a little further up. By the fourth mission it stops sounding so calm. By the sixth it's lashing out at the player. By the end it blames humanity in general.</p>
 
-    <div class="grid-three">
-      <div class="card">
+    <div class="cards">
+      <article class="card">
         <h3>One button</h3>
         <p>Tap to jump. Hold for height. Tap again mid-air for a double. That's the entire input vocabulary, on phone or PC.</p>
-      </div>
-      <div class="card">
+      </article>
+      <article class="card">
         <h3>Six missions</h3>
         <p>A server farm. A flooded chamber. An electric grid. Orbit. A statistical-menace level. A final tower. Each one rebuilds the world around the climb.</p>
-      </div>
-      <div class="card">
+      </article>
+      <article class="card">
         <h3>An AI that cracks</h3>
-        <p>The narrator is pre-baked for now and switching to live LLM later. Same character either way. Calm therapeutic god voice that does not survive Mission 4.</p>
-      </div>
+        <p>The narrator is pre-baked for now and switching to a live LLM later. Same character either way. Calm therapeutic god voice that does not survive Mission 4.</p>
+      </article>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="screens" id="screens">
-  <div class="container">
+  <section class="screens" id="screens">
     <h2>What it looks like</h2>
-    <p class="lead-2">Vector. Flat. Three planes: a desaturated background, a vector gameplay plane, and a clean UI on top. Locked palette per mission.</p>
+    <p class="section-lead">Flat vector. Three planes: a desaturated raster background, a vector gameplay plane, and a clean UI on top. A locked palette per mission.</p>
 
     <figure class="screen">
-      <img src="assets/screen-m3.png" alt="Mission 3, Zone 1. A wide flat platform at ground level under a deep purple sky, with a faint dotted-lattice pylon silhouette visible on the far right edge of the frame." loading="lazy">
-      <figcaption>Mission 3, Zone 1. The destination pylon looms on the right from the very first zone.</figcaption>
+      <img src="assets/screen-m3.png" alt="Mission 3, Zone 1. A wide flat platform at ground level under a deep purple sky, with a faint dotted-lattice pylon silhouette visible on the far right edge.">
+      <figcaption>Mission 3, Zone 1. The destination pylon looms on the right from the first zone onward.</figcaption>
     </figure>
 
     <figure class="screen">
-      <img src="assets/screen-breaker.png" alt="Mission 1 ending. A small dark security area with green code text scrolling on a screen, leading up into a small purple-lit breaker room labeled MASTER BREAKER." loading="lazy">
+      <img src="assets/screen-breaker.png" alt="Mission 1 ending. A small dark security area with green code text scrolling on a screen, leading up into a small purple-lit breaker room labeled MASTER BREAKER.">
       <figcaption>End of Mission 1. The first time the narrator stops being polite.</figcaption>
     </figure>
-  </div>
-</section>
+  </section>
 
-<section class="waitlist-section" id="waitlist">
-  <div class="container">
+  <section class="waitlist-section" id="waitlist">
     <h2>Get an email at launch</h2>
-    <p class="lead-2">One email when the game ships. Maybe one more if something interesting breaks. That's it. No marketing list, no upsells.</p>
+    <p class="section-lead">One email when the game ships. Maybe one more if something interesting breaks. That's it. No marketing list, no upsells.</p>
 
     <div class="waitlist" data-source="ptp-site">
       <p class="waitlist-count" id="waitlist-count" aria-live="polite"></p>
@@ -133,46 +102,45 @@
         </div>
 
         <label for="waitlist-email" class="sr-only">Email address</label>
-        <input id="waitlist-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+        <div class="waitlist-row">
+          <input id="waitlist-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+          <button type="submit" id="waitlist-submit" class="btn btn-primary">Join</button>
+        </div>
 
-        <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA"></div>
+        <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-size="invisible"></div>
 
-        <button type="submit" id="waitlist-submit" class="btn btn-primary">Join the waitlist</button>
         <p id="waitlist-status" class="waitlist-status" role="status" aria-live="polite"></p>
       </form>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="devlog" id="devlog">
-  <div class="container">
+  <section class="devlog" id="devlog">
     <h2>Read the devlog</h2>
-    <p class="lead-2">A diary of what's blowing up and what I'm learning. Posted on ermis.dev as it happens.</p>
-    <div class="devlog-links">
+    <p class="section-lead">A diary of what's blowing up and what I'm learning. Posted on ermis.dev as it happens.</p>
+    <div class="cards">
       <a href="https://ermis.dev/posts/pull-the-plug-day-9.html" class="card card-link">
-        <span class="post-meta">16 May 2026</span>
+        <span class="card-meta">16 May 2026</span>
         <h3>Day 9: forty-six commits and a memory rule</h3>
         <p>Playtest day. The verification rule that now lives in Claude's permanent memory.</p>
       </a>
       <a href="https://ermis.dev/posts/pull-the-plug-day-8.html" class="card card-link">
-        <span class="post-meta">15 May 2026</span>
+        <span class="card-meta">15 May 2026</span>
         <h3>Day 8: building a game I don't know how to build</h3>
         <p>Three missions, a narrator, procedural audio. I direct, Claude does the typing.</p>
       </a>
     </div>
     <p class="devlog-all"><a href="https://ermis.dev/posts/">All posts &rarr;</a></p>
-  </div>
-</section>
+  </section>
 
-<footer class="footer">
-  <div class="container">
-    <p class="meta">Built by <a href="https://ermis.dev">Ermis Zacharopoulos</a> in Berlin. The game is in development.</p>
-    <ul class="socials">
-      <li><a href="https://ermis.dev">ermis.dev</a></li>
-      <li><a href="https://pull-the-plug.feepok.workers.dev" target="_blank" rel="noopener">Play the WIP</a></li>
-      <li><a href="https://github.com/Ennui92" target="_blank" rel="noopener">GitHub</a></li>
-    </ul>
-  </div>
+</main>
+
+<footer class="page-foot">
+  <p class="meta">Built by <a href="https://ermis.dev">Ermis Zacharopoulos</a> in Berlin. The game is in development.</p>
+  <ul class="socials">
+    <li><a href="https://ermis.dev">ermis.dev</a></li>
+    <li><a href="https://pull-the-plug.feepok.workers.dev" target="_blank" rel="noopener">Play the WIP</a></li>
+    <li><a href="https://github.com/Ennui92" target="_blank" rel="noopener">GitHub</a></li>
+  </ul>
 </footer>
 
 <script src="waitlist.js"></script>
